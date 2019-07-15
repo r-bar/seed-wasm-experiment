@@ -15,6 +15,9 @@ module.exports = {
   },
   devServer: {
     contentBase: dist,
+    allowedHosts: [
+      "httpbin.org"
+    ]
   },
   plugins: [
     new CopyPlugin([
